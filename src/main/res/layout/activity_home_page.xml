@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_back"
+    tools:context=".HomePage">
+
+    <TextView
+        android:id="@+id/red"
+        android:layout_width="417dp"
+        android:layout_height="75dp"
+        android:background="#DC143C"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="75dp"
+        android:layout_height="73dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo1" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="410dp"
+        android:layout_height="655dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/red">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/b1"
+                    android:layout_width="200dp"
+                    android:layout_height="235dp"
+                    android:background="#00FFFFFF"
+                    android:onClick="openNew"
+                    app:srcCompat="@drawable/beach" />
+
+                <ImageButton
+                    android:id="@+id/b2"
+                    android:layout_width="200dp"
+                    android:layout_height="235dp"
+                    android:background="#00FFFFFF"
+                    android:onClick="openNew"
+                    app:srcCompat="@drawable/res" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/b3"
+                    android:layout_width="200dp"
+                    android:layout_height="235dp"
+                    android:background="#00FFFFFF"
+                    android:onClick="openNew"
+                    app:srcCompat="@drawable/rentals" />
+
+                <ImageButton
+                    android:id="@+id/b4"
+                    android:layout_width="200dp"
+                    android:layout_height="235dp"
+                    android:background="#00FFFFFF"
+                    android:onClick="openNew"
+                    app:srcCompat="@drawable/sigh" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/b5"
+                    android:layout_width="200dp"
+                    android:layout_height="235dp"
+                    android:background="#00FFFFFF"
+                    android:onClick="openNew"
+                    app:srcCompat="@drawable/rest" />
+
+                <ImageButton
+                    android:id="@+id/b6"
+                    android:layout_width="200dp"
+                    android:layout_height="235dp"
+                    android:background="#00FFFFFF"
+                    android:onClick="openNew"
+                    app:srcCompat="@drawable/clubbing" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/b7"
+                    android:layout_width="200dp"
+                    android:layout_height="235dp"
+                    android:background="#00FFFFFF"
+                    android:onClick="openNew"
+                    app:srcCompat="@drawable/pt" />
+
+                <ImageButton
+                    android:id="@+id/b8"
+                    android:layout_width="200dp"
+                    android:layout_height="235dp"
+                    android:background="#00FFFFFF"
+                    android:onClick="openNew"
+                    app:srcCompat="@drawable/locate" />
+            </TableRow>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="131dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginBottom="755dp"
+        android:fontFamily="@font/amiri_italic"
+        android:text="Manipal"
+        android:textAlignment="inherit"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="177dp"
+        android:layout_marginBottom="740dp"
+        android:fontFamily="@font/amiri_italic"
+        android:text="Wiki"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
